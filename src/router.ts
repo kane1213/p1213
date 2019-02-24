@@ -2,6 +2,8 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Products from "./views/Products.vue";
+import Orders from "./views/OrderTable.vue";
+import Detail from "./views/ProductDetail.vue";
 
 Vue.use(Router);
 
@@ -27,10 +29,20 @@ export default new Router({
       component: Products
     },
     {
+      path: "/detail/:id",
+      name: "detail",
+      component: Detail
+    },
+    {
       path: "/practice",
       name: "practice",
       component: () =>
         import("./views/Practice.vue")
+    },
+    {
+      path: "/orders",
+      name: "orders",
+      component: Orders
     }
   ]
 });

@@ -16,8 +16,9 @@ import BootstrapVue from 'bootstrap-vue';
 import Bootstrap from 'bootstrap';
 import Mint from 'mint-ui';
 import "mint-ui/lib/style.css";
+import './assets/style/common.sass';
 // window.$ = require("jquery");
-
+window._ = require('lodash');
 Vue.use(BootstrapVue, Bootstrap);
 Vue.use(Mint);
 Vue.use(VueAxios, axios);

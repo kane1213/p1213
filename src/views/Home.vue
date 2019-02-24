@@ -19,7 +19,6 @@ export default class Home extends Vue {
 
   created() {
     this.deskImgs = Array.from(Array(5).keys()).map( (img)=> require(`@/assets/home/hp${img+1}.jpg`));
-
   }
 }
 </script>
